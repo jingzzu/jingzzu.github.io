@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | QZ Blog</title>
+  <title>如何发布文章到自己的hexo博客及注意事项 | QZ Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QZ Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="1.文章如何显示摘要问题  点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数">
+<meta name="keywords" content="个人博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何发布文章到自己的hexo博客及注意事项">
+<meta property="og:url" content="http://yoursite.com/2019/09/11/如何发布文章到自己的hexo博客及注意事项/index.html">
 <meta property="og:site_name" content="QZ Blog">
+<meta property="og:description" content="1.文章如何显示摘要问题  点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-09-11T13:19:32.242Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QZ Blog">
+<meta name="twitter:title" content="如何发布文章到自己的hexo博客及注意事项">
+<meta name="twitter:description" content="1.文章如何显示摘要问题  点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数">
   
     <link rel="alternative" href="/atom.xml" title="QZ Blog" type="application/atom+xml">
   
@@ -150,36 +155,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-如何发布文章到自己的hexo博客及注意事项" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      如何发布文章到自己的hexo博客及注意事项
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/11/如何发布文章到自己的hexo博客及注意事项/" class="archive-article-date">
+
+        
+        <a href="/2019/09/11/如何发布文章到自己的hexo博客及注意事项/" class="archive-article-date">
   	<time datetime="2019-09-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/11/如何发布文章到自己的hexo博客及注意事项/">如何发布文章到自己的hexo博客及注意事项</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>1.文章如何显示摘要</strong><br><strong>问题</strong>  点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数</p>
+<a id="more"></a>
+<p><strong>解决办法</strong> 在你 MD 格式文章正文插入<code>&lt;!-- more --&gt;</code>即可，只会显示它之前的，此后的就不显示，点击文章标题，全文阅读才可看到，同时注释掉以下，在 themes/yilia/_config.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># excerpt_link: more</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+<p><strong>2.如何展示标签</strong><br><strong>问题</strong> 在标签打开的情况下要展示什么标签，每篇文章属于那些标签？<br><strong>解决办法</strong>   在博客的.md文件中添加tags标签如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的标签</span><br><span class="line">date: 2019-07-12</span><br><span class="line">tags:</span><br><span class="line">    - 标签0</span><br><span class="line">    - 标签1</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.如何发表</strong><br>1.选择一个markdown编辑器，csdn带的就有<br>2.注册csdn登录进去，首先找到右上角头像的位置，选择账号设置，然后选择我的博客,然后选择博客设置,往下翻找到 默认编辑器类型：选择MarkDown编辑器 保存就ok了；<br>3.点击写博客，先了解下markdown编辑器基本的用法，然后就可以写博客了，写好之后导出到本地<br>会下载一个 .md 文件；然后找到这个md文件，把它复制到你hexo博客文件夹 中 source 下的 _posts 中，默认只有一个 hello-world.md；</p>
+<ol start="4">
+<li>复制完之后然后使用文本编辑器打开它，在第一行加上title，内容自定，如</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title: this is my first blog</span><br></pre></td></tr></table></figure>
+
+<p>5.接着在你博客站点文件夹下右键空白处，选择Git Bash Here，输入 hexo g (完整命令为hexo generate)，用于生成静态文件<br>6 然后 输入 hexo s(完整命令为hexo server)，用于启动服务器，主要用来本地预览；完成后 打开浏览器输入 localhost:4000，会发现多了你刚写的那篇博客<br>7 最后输入hexo d(hexo deploy)，用于将本地文件发布到github等git仓库上；</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,84 +209,124 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/11/如何发布文章到自己的hexo博客及注意事项/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/12/hexo+github搭建个人博客（一）（最全最详细）/" class="archive-article-date">
-  	<time datetime="2019-07-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-12</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/12/hexo+github搭建个人博客（一）（最全最详细）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo+github搭建个人博客（一）（最全最详细）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/12/hexo+github搭建个人博客（一）（最全最详细）/">hexo+github搭建个人博客（一）（最全最详细）</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">个人博客</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-11T04:39:52.056Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/11/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
+
+<script>
+var gitment = new Gitment({
+  id: "Wed Sep 11 2019 00:00:00 GMT+0800",
+  owner: 'jingzzu',
+  repo: 'jingzzu.github.io',
+  oauth: {
+    client_id: '34a9a03b2b52290d7eb1',
+    client_secret: 'fd63f51988912ae6a5f299acf74aaa2ac0e7f941',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+
+  
 
 
           </div>
@@ -292,8 +350,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
